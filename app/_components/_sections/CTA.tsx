@@ -56,7 +56,7 @@ export default function CTASection(){
                         />
                         <div className="flex justify-center pt-4">
                             <Button className="">
-                                Sign Up
+                                Try FREE for a Month
                             </Button>
                         </div>
                     </div>

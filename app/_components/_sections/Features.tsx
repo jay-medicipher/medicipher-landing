@@ -8,36 +8,36 @@ export default function Features(){
     const featuresContainer = useRef(null)
 
     useGSAP(() => {
-        gsap.fromTo('.scrollFade',{opacity:0,filter:'blur(10px)'},{opacity:1,filter:'blur(0px)',stagger:0.2,scrollTrigger:{trigger:'.featuresContainer',scrub:true,start:'top 60%',end:'top top'}})
+        gsap.fromTo('.scrollFade',{opacity:0},{opacity:1,stagger:0.2,scrollTrigger:{trigger:'.featuresContainer',scrub:true,start:'top 60%',end:'top top'}})
     },{dependencies:[],scope:featuresContainer})
     return(
         <section ref={featuresContainer} className="featuresContainer relative flex flex-col justify-center items-center w-full h-screen p-6 pt-24">
             <div className="flex flex-col w-full max-w-270 h-full">
                 <h2>Features</h2>
                 <div className="grid grid-flow-row md:grid-flow-col grid-cols-6 grid-rows-4 gap-4 h-full w-full">
-                    <FeatureCard additionalClass="scrollFade blur-[10px] opacity-0 row-span-2 md:row-span-4 col-span-6 md:col-span-2 bg-light-blue">
-                        <h3>43%</h3>
-                        <p>Less time spent on skilled nursing documentation with AI-assisted summaries and auto-filled MDS sections.</p>
-                        <span className="caption">Across 120 SNF teams, 6-month average.</span>
+                    <FeatureCard additionalClass="scrollFade opacity-0 row-span-2 md:row-span-4 col-span-6 md:col-span-2 bg-light-blue">
+                        <h3>Up to ~$130/day</h3>
+                        <h6>Recapture Lost Daily Revenue</h6>
+                        <span className="caption">Prevent PDPM coding errors and recapture $80 to $130 per patient, per day.</span>
                     </FeatureCard>
-                    <FeatureCard additionalClass="scrollFade blur-[10px] opacity-0 row-span-2 col-span-3 md:col-span-2 bg-accent text-white">
-                        <h3>18 hrs</h3>
-                        <p>Saved per clinician each month on daily notes, therapy updates, and care-plan edits.</p>
-                        <span className="caption"><span className="text-white/50">Median savings per FTE.</span></span>
+                    <FeatureCard additionalClass="scrollFade opacity-0 row-span-2 col-span-3 md:col-span-2 bg-accent text-white">
+                        <h3>{`>20% ROI`}</h3>
+                        <h6>Drastically Reduce Staff Turnover Costs</h6>
+                        <span className="caption"><span className="text-white/50">{`AI automates assessment prepopulation, preventing the >$120,000 cost of replacing an MDS Coordinator.`}</span></span>
                     </FeatureCard>
-                    <FeatureCard additionalClass="scrollFade blur-[10px] opacity-0 row-span-2 col-span-6 md:col-span-4 bg-cover bg-[url(https://res.cloudinary.com/df9xjyhfb/image/upload/v1770350247/pexels-marcus-aurelius-6787761_og4odb.jpg)]">
+                    <FeatureCard additionalClass="scrollFade opacity-0 row-span-2 col-span-6 md:col-span-4 bg-cover bg-[url(https://res.cloudinary.com/df9xjyhfb/image/upload/v1770350247/pexels-marcus-aurelius-6787761_og4odb.jpg)]">
                         <div className="w-full md:w-1/3 p-2 rounded-2xl bg-pale-blue/10 backdrop-blur-md">
                             <div className="text-white">
-                                <h3>2.4x</h3>
-                                <p>Faster narrative generation for skilled nursing visits, with structured citations from the chart.</p>
-                                <span className="text-xs">Average speedup in pilot sites.</span>
+                                <h3>ZERO Friction</h3>
+                                <h6>{`Eliminate the "Point Solution Tax"`}</h6>
+                                <span className="text-xs">{`Stop paying the "Point Solution Tax" with a unified suite that eliminates data silos and workflow friction.`}</span>
                             </div>
                         </div>
                     </FeatureCard>
-                    <FeatureCard additionalClass="scrollFade blur-[10px] opacity-0 row-span-2 col-span-3 col-start-4 row-start-3 md:row-start-1 md:col-span-2 bg-primary">
-                        <h3>92%</h3>
-                        <p>Documentation accuracy when AI checks for missing risk factors and inconsistent meds.</p>
-                        <span className="caption">Internal QA review, 3,800 notes.</span>
+                    <FeatureCard additionalClass="scrollFade opacity-0 row-span-2 col-span-3 col-start-4 row-start-3 md:row-start-1 md:col-span-2 bg-primary">
+                        <h3>15%</h3>
+                        <h6>Defend Against Aggressive Audits</h6>
+                        <span className="caption">{`Protect earned revenue by instantly building undeniable evidence trails to counter the national 15.1% improper payment rate.`}</span>
                     </FeatureCard>
                 </div>
             </div>

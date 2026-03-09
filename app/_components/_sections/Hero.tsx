@@ -34,7 +34,7 @@ export default function HeroSection(){
                     <source src="https://res.cloudinary.com/df9xjyhfb/video/upload/v1770177782/uhd_25fps_m5vyqb.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className="absolute -bottom-48 -left-20 -right-20 blur-[20px] h-96 bg-pale-blue bottomBlur"></div>
+            <div className="absolute -bottom-48 -left-20 -right-20 blur-[20px] h-96 bg-accent bottomBlur"></div>
         </section>
     )
 }

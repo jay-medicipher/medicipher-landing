@@ -12,8 +12,8 @@ export default function Home() {
     <main className="flex min-h-screen w-full max-w-screen flex-col overscroll-none">
       <ScrollSmootherWrapper>
         <HeroSection />
-        <Features />
         <ShowcaseSection />
+        <Features />
         <SlideSection />
         <CTASection />
         <FooterSection />
